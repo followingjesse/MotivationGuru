@@ -1,6 +1,7 @@
 {
   "invocation": "motivation guru",
-  "intents": [{
+  "intents": [
+    {
       "name": "YesIntent",
       "phrases": [
         "yes",
@@ -30,10 +31,11 @@
         "what",
         "ome more time"
       ]
-    },
+    }
   ],
   "dialogflow": {
-    "intents": [{
+    "intents": [
+      {
         "name": "Default Fallback Intent",
         "auto": true,
         "webhookUsed": true,
@@ -43,9 +45,11 @@
         "name": "Default Welcome Intent",
         "auto": true,
         "webhookUsed": true,
-        "events": [{
-          "name": "WELCOME"
-        }]
+        "events": [
+          {
+            "name": "WELCOME"
+          }
+        ]
       }
     ]
   }

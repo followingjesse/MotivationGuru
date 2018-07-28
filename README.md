@@ -1,20 +1,45 @@
-[![Jovo Framework](https://www.jovo.tech/img/github-logo.png)](https://www.jovo.tech)
+# MotivationGuru
 
-<p align="center">Templates for the <a href="https://github.com/jovotech/jovo-framework-nodejs">Jovo Framework</a> ⭐️</p>
+A voice application created using the Jovo framework that enables cross platform apps. The app is designed to give inspirational quotes as you work throughout your day.
 
-<p align="center">
-<a href="https://www.jovo.tech/framework/docs/"><strong>Documentation</strong></a> -
-<a href="https://github.com/jovotech/jovo-cli"><strong>CLI </strong></a> - <a href="https://github.com/jovotech/jovo-framework-nodejs/blob/master/CONTRIBUTING.md"><strong>Contributing</strong></a> - <a href="https://twitter.com/jovotech"><strong>Twitter</strong></a></p>
-<br/>
 
-# Template: Hello World
+## Getting Started
 
-Jovo Sample Voice App with a simple "Hello World!" + asking for the user's name. This is the default template for the `jovo new` command:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```sh
-$ jovo new <directory>
+### Prerequisites
 
-## Alternative
-$ jovo new <directory> --template helloworld
+Install Node.js by running the following homebrew command
+
+```
+brew install node
 ```
 
+### Installing
+
+Clone the repository and install the jovo cli and dependencies by running
+
+```
+npm install -g jovo-cli
+```
+
+Once installed, run the following jovo commands to initialize, build, deploy, then finally run the voice app.
+
+```
+jovo init
+jovo build
+jovo deploy
+jovo run
+```
+
+after you run the app, you will receive a webhook address that you can test in your browser.
+Otherwise, you can upload the zip file under the "platforms" folder to Google's dialogflow or AlexaSkills.
+
+## Built With
+
+* [Node](https://nodejs.org/en/) - Runtime to initialize the application
+* [Jovo](http://jovo.tech) - Framework that allows the voice app to be deployed cross platform
+
+## Author
+
+* **Jesse Jia** - [followingjesse](https://github.com/followingjesse)
