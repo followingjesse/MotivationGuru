@@ -1,0 +1,52 @@
+{
+  "invocation": "motivation guru",
+  "intents": [{
+      "name": "YesIntent",
+      "phrases": [
+        "yes",
+        "yes please",
+        "yeah",
+        "hell yeah",
+        "definitely",
+        "of course I do",
+        "show me the money"
+      ]
+    },
+    {
+      "name": "NoIntent",
+      "phrases": [
+        "no",
+        "no thank you",
+        "no thanks",
+        "no way",
+        "it's okay"
+      ]
+    },
+    {
+      "name": "RepeatIntent",
+      "phrases": [
+        "repeat",
+        "say that again",
+        "what",
+        "ome more time"
+      ]
+    },
+  ],
+  "dialogflow": {
+    "intents": [{
+        "name": "Default Fallback Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "fallbackIntent": true
+      },
+      {
+        "name": "Default Welcome Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "events": [{
+          "name": "WELCOME"
+        }]
+      }
+    ]
+  }
+}
